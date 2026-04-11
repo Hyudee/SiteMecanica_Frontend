@@ -133,3 +133,46 @@ body.orcamento::after {
 body.orcamento .footer{
     color: aliceblue;
 }
+body.orcamento .parte-central{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*.pecas{} coloquei isso aqui como comentario so pra salvar o codigo, pq o vs code nn deixa salvar se ele estiver vazio. ASS.: JOAO PEDRO.*/ 
+/*nao tinha button nas peças, só invoca o button{}, tá chamando os botões, a classe botao. ASS:Davi Hyude*/
+body.orcamento button{
+    height: 140px;
+    width: 140px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+/*estilo dos botoes interativos. Ass:Davi Hyude*/
+.pecas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    width: 75px;
+    height: 100px;
+}
+.pecas img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.pecas h1{
+    font-size: 14px;
+    color: white;
+}
+
+body.orcamento button:hover .pecas{
+    transform: scale(1.1);
+    background: rgba(255, 95, 31, 0.8);
+}
