@@ -17,7 +17,6 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    color: aqua;
 }
 .logo img{
     width: auto;
@@ -143,8 +142,7 @@ body.orcamento .botao{
     justify-content: center;
     align-items: flex-start;
 }
-/*.pecas{} coloquei isso aqui como comentario so pra salvar o codigo, pq o vs code nn deixa salvar se ele estiver vazio. ASS.: JOAO PEDRO.*/ 
-/*nao tinha button nas peças, só invoca o button{}, tá chamando os botões, a classe botao. ASS:Davi Hyude*/
+
 body.orcamento button{
     height: 140px;
     width: 140px;
@@ -152,7 +150,7 @@ body.orcamento button{
     border: none;
     cursor: pointer;
 }
-/*estilo dos botoes interativos. Ass:Davi Hyude*/
+
 .pecas{
     display: flex;
     flex-direction: column;
@@ -180,15 +178,61 @@ body.orcamento button:hover .pecas{
     transform: scale(1.1);
     background: rgba(255, 95, 31, 0.8);
 }
-.geral{
+
+/* Fiz todas as divs necessarias pra pagina do orcamento, linkei os botoes com suas respectivas categorias de pecas, fiz os titulos e estilizei eles. Obs.: Nao consegui fazer com que a div de cada card aparecesse, apenas a div-pai dos cards que sao as faixas translucidas que aparecem logo abaixo dos titulos, ou seja, essa div so serve para armazenar as divs dos cards, que sao 3. No mais, deixo pra voces ajeitarem a parte da responsividade das divs, pois me embanano todo p ajeitar isso. ASS.: JOAO PEDRO.*/
+
+
+.conteiner_pecas{
+
+    padding-top: 70px;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    
+
+
+
+
+
 }
-.geral .titulo{
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+
+.conteiner_pecas .titulo{
+    
     display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4500;
+    
+
 }
+
+/* IMPORTANTE!!!! ESSA PARTE LOGO ABAIXO TEM A FUNCAO DE CRIAR AS LINHAS ESTILIZADORAS DOS TITULOS, NAO MEXA!!! ASS. JOAO PEDRO. */
+
+.titulo::before,
+.titulo::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ff4500;
+}
+
+.titulo::before {
+  margin-right: 15px;
+}
+
+.titulo::after {
+  margin-left: 15px;
+}
+
+.conteiner_pecas .cards{
+    
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.242);
+
+}
+/*
+.conteiner_pecas, .card1, .card2, .card3{
+    
+
+} */
