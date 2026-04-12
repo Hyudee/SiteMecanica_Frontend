@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
@@ -14,6 +17,7 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    color: aqua;
 }
 .logo img{
     width: auto;
@@ -133,7 +137,7 @@ body.orcamento::after {
 body.orcamento .footer{
     color: aliceblue;
 }
-body.orcamento .parte-central{
+body.orcamento .botao{
 
     display: flex;
     justify-content: center;
@@ -175,4 +179,16 @@ body.orcamento button{
 body.orcamento button:hover .pecas{
     transform: scale(1.1);
     background: rgba(255, 95, 31, 0.8);
+}
+.geral{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.geral .titulo{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
