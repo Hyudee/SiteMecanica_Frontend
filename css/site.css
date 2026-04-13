@@ -165,7 +165,7 @@
         color: aliceblue;
     }
 
-   body.orcamento .botao {
+    body.orcamento .botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,3 +313,90 @@
             max-width: 90%;
         }
     }
+
+/* ==================
+    Contatos
+================== */ 
+.Contate{
+    margin: 0;
+
+}
+.Caixa{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card1{
+    margin-top: 20px;
+        flex: 0 0 180px;
+        max-width: 200px;
+        height: 150px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border: 1px solid  rgba(255, 95, 31, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        padding: 7px;
+        color: chocolate;
+        gap: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card1 i{
+    margin-top: 20px;
+    
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 40%;
+}
+input, 
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 95, 31, 0.5);
+    background: rgba(0, 0, 0, 0.25);
+    color: #ff4500;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border-radius: 12px;
+}
+.contate_button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(rgb(0, 0, 0));
+    border-radius: 30px;
+    border-bottom:2px solid #ff4500;
+    color: #ff4500;
+}
+.contate_button:hover {
+    background-color: #ff4500;
+    color: #ffd700;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.card1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #ffd700;
+}
+.card1 a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #ffd700;
+}
+.card1 a{
+    color:chocolate;
+}
